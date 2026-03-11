@@ -37,7 +37,7 @@ body > header {
     padding-right: calc(var(--spacing) * 5);
     padding-left: calc(var(--spacing) * 5);
     max-width: calc(var(--spacing) * 360);
-    height: 8vh;
+    height: calc(var(--spacing) * 10);
     font-size: 12pt;
     background-color: var(--primary);
 }
@@ -50,7 +50,7 @@ body > header h1 {
 body > header button {
     display: block;
     height: 70%;
-    width: 5vw;
+    width: calc(var(--spacing) * 20);
     border: 0;
     color: #000000;
 }
@@ -68,7 +68,7 @@ body > header div {
 body > header div button {
     display: block;
     text-align: left;
-    width: 12vw;
+    width: calc(var(--spacing) * 35);
     border: 0;
 }
 
