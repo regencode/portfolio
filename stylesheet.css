@@ -159,7 +159,7 @@ main {
 
 }
 
-#tech-stack header *:first-child {
+#tech-stack header > *:first-child {
     color: var(--cyan);
     margin-top: calc(var(--spacing) * 4);
     margin-bottom: 0;
@@ -202,9 +202,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-image: url('assets/images/education.png');
-    background-position: 0% 30%;
-    background-size: 100%;
 }
 #education header {
     border: 1px solid var(--red);
@@ -212,12 +209,14 @@ main {
     width: calc(100% - var(--spacing) * 5);
     height: fit-content;
     font-size: var(--font-lg);
-
     display: flex;
     flex-direction: column;
     gap: 0;
+    background-image: url('assets/images/education.png');
+    background-position: 0% 30%;
+    background-size: 100%;
 }
-#education header *:first-child {
+#education header > *:first-child {
     color: var(--red);
     margin-top: calc(var(--spacing) * 4);
     margin-bottom: 0;
@@ -225,6 +224,24 @@ main {
 #education header p {
     margin-top: 0;
     margin-bottom: calc(var(--spacing) * 4);
+}
+#education #content {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+#education #content #binus {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 3fr 4fr;
+    column-gap: 1.5px;
+    background-color: var(--secondary);
+}
+
+#education #content #binus > * {
+    padding-left: calc(var(--spacing) * 5);
+    padding-right: calc(var(--spacing) * 8);
+    background-color: var(--primary);
 }
 
 
@@ -299,7 +316,7 @@ main {
     background-size: 100%;
 
 }
-#experiences header *:first-child {
+#experiences header > *:first-child {
     color: var(--green);
     margin-top: calc(var(--spacing) * 4);
     margin-bottom: 0;
