@@ -17,6 +17,7 @@
     --font-lg: 24px;
     --font-md: 18px;
     --font-sm: 12px;
+    --font-xs: 8px;
 }
 
 body {
@@ -87,7 +88,7 @@ main {
     max-width: calc(var(--spacing) * 360);
 }
 
-section, #hero {
+#hero {
     border: 2px solid var(--secondary);
     color: var(--text-primary);
     width: 100%;
@@ -95,6 +96,9 @@ section, #hero {
     display: flex;
     flex-direction: row;
     align-items: end;
+    background-image: url('assets/images/hero.png');
+    background-position: 0% 30%;
+    background-size: 120%;
 }
 
 #hero #container {
@@ -129,7 +133,7 @@ section, #hero {
     border: 0;
 }
 
-section, #tech-stack {
+#tech-stack {
     border: 2px solid var(--cyan);
     color: var(--text-primary);
     width: 100%;
@@ -137,6 +141,9 @@ section, #tech-stack {
     display: flex;
     flex-direction: column;
     align-items: start;
+    background-image: url('assets/images/techstack.png');
+    background-position: 0% 130%;
+    background-size: 120%;
 }
 
 #tech-stack header {
@@ -187,7 +194,7 @@ section, #tech-stack {
     padding-bottom: calc(var(--spacing)* 2);
 }
 
-section, #education{
+#education{
     border: 2px solid var(--red);
     color: var(--text-primary);
     width: 100%;
@@ -195,6 +202,9 @@ section, #education{
     display: flex;
     flex-direction: column;
     align-items: start;
+    background-image: url('assets/images/education.png');
+    background-position: 0% 30%;
+    background-size: 100%;
 }
 #education header {
     border: 1px solid var(--red);
@@ -206,7 +216,6 @@ section, #education{
     display: flex;
     flex-direction: column;
     gap: 0;
-
 }
 #education header *:first-child {
     color: var(--red);
@@ -219,7 +228,7 @@ section, #education{
 }
 
 
-section, #projects{
+#projects{
     border: 2px solid var(--blue);
     color: var(--text-primary);
     width: 100%;
@@ -227,6 +236,9 @@ section, #projects{
     display: flex;
     flex-direction: column;
     align-items: start;
+    background-image: url('assets/images/projects.png');
+    background-position: 60% 40%;
+    background-size: 130%;
 }
 #projects header {
     border: 1px solid var(--blue);
@@ -262,7 +274,7 @@ section, #projects{
     padding-left: calc(var(--spacing) * 5);
 }
 
-section, #experiences{
+#experiences{
     border: 2px solid var(--green);
     color: var(--text-primary);
     width: 100%;
@@ -281,6 +293,10 @@ section, #experiences{
     display: flex;
     flex-direction: column;
     gap: 0;
+
+    background-image: url('assets/images/experiences.png');
+    background-position: 0% 70%;
+    background-size: 100%;
 
 }
 #experiences header *:first-child {
