@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital@0;1&display=swap');
 
+html {
+    scroll-padding-top: 4.25rem; /* matches the header's total height */
+}
+
 :root {
     --spacing: .25rem; 
     --primary: #0E0E0E;
@@ -50,7 +54,7 @@ body > header h1 {
     font-size: 20pt;
 }
 
-body > header button {
+body > header > button {
     display: block;
     height: 70%;
     width: calc(var(--spacing) * 20);
@@ -68,11 +72,15 @@ body > header div {
     column-gap: calc(var(--spacing) * 2);
 }
 
-body > header div button {
+body > header div a {
     display: block;
     text-align: left;
     width: calc(var(--spacing) * 35);
+    padding-left: var(--spacing);
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
     border: 0;
+    text-decoration: none;
 }
 
 
