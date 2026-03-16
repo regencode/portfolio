@@ -96,7 +96,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: end;
-    background-image: url('assets/images/hero.png');
+    background-image: url('assets/images/hero.webp');
     background-position: 0% 30%;
     background-size: 120%;
 }
@@ -141,7 +141,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-image: url('assets/images/techstack.png');
+    background-image: url('assets/images/techstack.webp');
     background-position: 0% 130%;
     background-size: 120%;
 }
@@ -212,7 +212,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0;
-    background-image: url('assets/images/education.png');
+    background-image: url('assets/images/education.webp');
     background-position: 0% 30%;
     background-size: 100%;
 }
@@ -253,7 +253,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-image: url('assets/images/projects.png');
+    background-image: url('assets/images/projects.webp');
     background-position: 60% 40%;
     background-size: 130%;
 }
@@ -311,7 +311,7 @@ main {
     flex-direction: column;
     gap: 0;
 
-    background-image: url('assets/images/experiences.png');
+    background-image: url('assets/images/experiences.webp');
     background-position: 0% 70%;
     background-size: 100%;
 
