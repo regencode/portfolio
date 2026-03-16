@@ -63,11 +63,16 @@ body > header h1 {
     font-size: 20pt;
 }
 
-body > header > button {
+body > header > a {
     display: block;
-    height: 70%;
-    width: calc(var(--spacing) * 20);
+    height: fit-content;
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+    width: calc(var(--spacing) * 30);
     border: 0;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
     color: #000000;
 }
 
