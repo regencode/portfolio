@@ -496,8 +496,11 @@ footer div * {
     margin-bottom: 0;
 }
 
-footer div button {
+footer div a {
     background-color: #FFFFFF;
+    padding-left: calc(var(--spacing) * 3);
+    padding-right: calc(var(--spacing) * 3);
+    color: #000000;
     text-align: center;
     border: 0
 }
