@@ -199,7 +199,6 @@ main {
 }
 
 #tech-stack #content > * {
-    aspect-ratio: 1/1;
     background-color: var(--primary);
     padding-top: calc(var(--spacing) * 3);
     padding-bottom: calc(var(--spacing) * 3);
@@ -367,6 +366,8 @@ main {
 
 }
 #projects #content > li {
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary);
     padding-left: calc(var(--spacing) * 5);
     padding-right: calc(var(--spacing) * 5);
@@ -380,6 +381,27 @@ main {
     display: block;
     border: 0;
     background-color: white;
+}
+
+#projects #content > li > #button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: var(--spacing);
+    justify-content: space-evenly;
+}
+
+#projects #content > li > #button-container > * {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: calc(var(--spacing) * 2);
+    padding-right: calc(var(--spacing) * 2);
+}
+
+#projects #content > li > #button-container > * {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
 }
 
 #experiences {
