@@ -148,7 +148,7 @@ main {
     margin-bottom: 0;
 }
 
-#hero #container #button-container button {
+#hero #container #button-container a {
     aspect-ratio: 1/1;
     width: 100%;
     background-color: #FFFFFF;
