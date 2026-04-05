@@ -116,6 +116,7 @@ main {
 
 #hero {
     border: 2px solid var(--secondary);
+    border-bottom: none;
     color: var(--text-primary);
     width: 100%;
     height: calc(var(--spacing) * 120);
@@ -125,6 +126,7 @@ main {
     background-image: url('assets/images/hero.webp');
     background-position: 0% 30%;
     background-size: 120%;
+    margin-bottom: 0;
 }
 
 #hero #container {
@@ -157,6 +159,37 @@ main {
     width: 100%;
     background-color: #FFFFFF;
     border: 0;
+}
+
+#hero-content {
+    display: grid;
+    color: #FFFFFF;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5px;
+    border: 2px solid var(--secondary);
+    background-color: var(--secondary);
+    margin-top: 0;
+    border-top: none;
+}
+
+#hero-content > #about-me {
+    padding-top: calc(var(--spacing) * 3);
+    padding-left: calc(var(--spacing) * 3);
+    padding-right: calc(var(--spacing) * 3);
+    background-color: var(--primary);
+}
+#hero-content > #misc {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: var(--secondary);
+}
+
+#hero-content > #misc > * {
+    background-color: var(--primary);
+    padding-top: calc(var(--spacing) * 3);
+    padding-left: calc(var(--spacing) * 3);
+    padding-right: calc(var(--spacing) * 3);
 }
 
 #tech-stack {
